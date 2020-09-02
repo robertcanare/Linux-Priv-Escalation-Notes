@@ -1,4 +1,4 @@
-# My Linux Privilege Escalation Notes
+# Just my Linux Privilege Escalation Notes
 
 # Check Kernel Version 
 uname -a
