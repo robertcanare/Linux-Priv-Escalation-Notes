@@ -2,11 +2,35 @@
 
 # Check Kernel Version 
 uname -a
+
 # Check distro version
 cat /proc/version
+
 # Check all the services running by root and check other services that running by different users
 ps aux | grep root
+
 # Check what you can run as SUDO
 sudo -l
+
 # Check all the users
 cat /etc/passwd
+
+# Check history
+history
+
+# Check all the connection
+netstat -ano
+
+# Look for any password
+grep --color=auto -rnw '/' -ie "PASSWORD=" --color=always 2> /dev/null
+
+# Look for any confidential files
+find / -name "id_rsa" 2> /dev/null
+find / -name "pass*" 2> /dev/null
+
+# Use automated tools
+https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS
+https://github.com/rebootuser/LinEnum
+https://github.com/mzet-/linux-exploit-suggester
+https://github.com/sleventyeleven/linuxprivchecker
+
