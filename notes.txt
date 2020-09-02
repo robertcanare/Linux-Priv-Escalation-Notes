@@ -24,8 +24,13 @@ netstat -ano
 # Look for any password
 grep --color=auto -rnw '/' -ie "PASSWORD=" --color=always 2> /dev/null
 
+# Check shadow and passwd permission
+ls -la /etc/passwd
+ls -la /etc/shadow
+
 # Look for any confidential files
 find / -name "id_rsa" 2> /dev/null
+find / -name "authorized_keys" 2> /dev/null
 find / -name "pass*" 2> /dev/null
 
 # Use automated tools
