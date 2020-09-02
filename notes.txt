@@ -24,6 +24,9 @@ history
 # Check all the connection
 netstat -ano
 
+# Find a file that owned by the root users
+find / -perm -u=s -type f 2>/dev/null
+
 # Look for any password
 grep --color=auto -rnw '/' -ie "PASSWORD=" --color=always 2> /dev/null
 
