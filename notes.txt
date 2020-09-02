@@ -1,0 +1,12 @@
+# My Linux Privilege Escalation Notes
+
+# Check Kernel Version 
+uname -a
+# Check distro version
+cat /proc/version
+# Check all the services running by root and check other services that running by different users
+ps aux | grep root
+# Check what you can run as SUDO
+sudo -l
+# Check all the users
+cat /etc/passwd
