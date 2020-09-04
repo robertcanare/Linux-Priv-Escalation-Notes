@@ -34,6 +34,10 @@ grep --color=auto -rnw '/' -ie "PASSWORD=" --color=always 2> /dev/null
 ls -la /etc/passwd
 ls -la /etc/shadow
 
+# Check capabilities
+getcap -r / 2>/dev/null
+
+
 # Look for any confidential files
 find / -name "id_rsa" 2> /dev/null
 find / -name "authorized_keys" 2> /dev/null
