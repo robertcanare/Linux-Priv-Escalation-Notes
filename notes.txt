@@ -12,9 +12,6 @@ ps aux | grep root
 # Check what you can run as SUDO
 sudo -l
 
-# Then use this to check the binary allowed on SUDO
-https://gtfobins.github.io/
-
 # Check all the users
 cat /etc/passwd
 
@@ -58,3 +55,5 @@ https://github.com/rebootuser/LinEnum
 https://github.com/mzet-/linux-exploit-suggester
 https://github.com/sleventyeleven/linuxprivchecker
 
+# Just fucking pay attention on this you should enumerate and look the binaries here for privilege escalation
+https://gtfobins.github.io/
